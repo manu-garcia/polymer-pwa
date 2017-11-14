@@ -1,0 +1,17 @@
+{
+  "name": "polymer-3",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack-dev-server --hot --inline"
+  },
+  "dependencies": {
+    "@polymer/polymer": "LasaleFamine/polymer#3.0-preview"
+  },
+  "devDependencies": {
+    "text-loader": "0.0.1",
+    "webpack": "3.5.5",
+    "webpack-dev-server": "2.7.1"
+  }
+}
