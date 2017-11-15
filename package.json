@@ -1,0 +1,8 @@
+{
+  "name": "polymer-pwa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:manu-garcia/polymer-pwa.git",
+  "author": "manu-garcia <garcia.martin.manu@gmail.com>",
+  "license": "MIT"
+}
