@@ -27,6 +27,7 @@ export class MessagesComponent extends Element {
 
     // Listen for messages
     socket.addEventListener('message', function (event) {
+      console.log('New message from server: ', JSON.parse(event.data));
       self.push('messages', JSON.parse(event.data));
     });
 

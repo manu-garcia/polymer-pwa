@@ -1,12 +1,13 @@
-import './messages-component';
-
 import {Element as PolymerElement} from '@polymer/polymer/polymer-element.js';
+
+import './messages-component';
+import './index.css';
 
 export class MyApp extends PolymerElement {
 
   static get template() {
     return `<div>
-      <div>[[name]]</div>
+      <!--- <div>[[name]]</div> --->
       <messages-component></messages-component>
     </div>`
   }

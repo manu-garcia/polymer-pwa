@@ -1,6 +1,24 @@
+<style>
+
+  .message-box {
+    max-width: 400px;
+    min-width: 250px;
+    
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+
+</style>
+
 <dom-bind>
   <template is="dom-repeat" items="{{messages}}">
-      <div>Title: <span>{{item.title}}</span></div>
-      <div>Message: <span>{{item.message}}</span></div>
+    <div class="message-box">
+      <div>
+        <h1>{{item.title}}</h1>
+        <img src="{{item.img}}" />
+      </div>
+      <div><span>{{item.message}}</span></div>
+  </div>
   </template>
 </dom-bind>

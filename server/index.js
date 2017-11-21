@@ -49,12 +49,16 @@ var generateParagraph = function () {
     count: 1,                      // Number of words, sentences, or paragraphs to generate. 
     units: 'paragraphs',           // Generate words, sentences, or paragraphs. 
     sentenceLowerBound: 10,        // Minimum words per sentence. 
-    sentenceUpperBound: 20,        // Maximum words per sentence. 
+    sentenceUpperBound: 12,        // Maximum words per sentence. 
     paragraphLowerBound: 2,        // Minimum sentences per paragraph. 
     paragraphUpperBound: 5,        // Maximum sentences per paragraph. 
     random: Math.random,           // A PRNG function. Uses Math.random by default 
   });
 
+};
+
+var generateImgSrc = function (min, max) {
+  return '/img/img-' + parseInt(Math.random() * (max - min) + min) + '.png';
 };
 
 const interval = setInterval(function ping() {
@@ -65,6 +69,7 @@ const interval = setInterval(function ping() {
       JSON.stringify({
         title: generateTitle(),
         message: generateParagraph(),
+        img: generateImgSrc(0, 10),
       })
     );
 
